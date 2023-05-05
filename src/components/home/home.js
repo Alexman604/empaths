@@ -25,6 +25,8 @@ import AdbIcon from '@mui/icons-material/Adb';
 import Badge from '@mui/material/Badge';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import { SearchHome } from './search';
+import Divider from '@mui/material/Divider';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -119,7 +121,7 @@ function Home() {
             </AppBar>
 
             <Box >
-                
+    <SearchHome/>
                                     </Box>
 
 
@@ -127,6 +129,7 @@ function Home() {
                 <Box marginY={2}>
                     <img src={Logo} alt="" />
                 </Box>
+                <Divider variant="middle" />
                 <List sx={{ display: 'flex', flexDirection: 'column' }}>
                     <ListItem disablePadding>
                         <ListItemButton sx={{
@@ -138,6 +141,7 @@ function Home() {
                             <img src={IconButtonVector} alt="" />
                         </ListItemButton>
                     </ListItem>
+                    <Divider variant="middle" />
                     <ListItem disablePadding>
                         <ListItemButton sx={{
                             minHeight: 48,
