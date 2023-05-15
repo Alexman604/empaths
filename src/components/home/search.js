@@ -31,7 +31,7 @@ export const SearchHome = () => {
     };
 
     return (
-        <Box width="100%" maxWidth="80%" paddingLeft={15} paddingRight={20} margin="auto" paddingTop={15} backgroundColor="rgba(116, 89, 217, 0.08)" >
+        <Box  paddingLeft={10} paddingRight={20}  paddingTop={15} backgroundColor="rgba(116, 89, 217, 0.08)" >
 
             <Grid container spacing={2} alignItems="center" >
                 <Grid item xs={12} md={6}>
@@ -60,14 +60,15 @@ export const SearchHome = () => {
                         defaultValue=""
                     >
                         <MenuItem value="">All</MenuItem>
-                        <MenuItem value="A">Type A</MenuItem>
-                        <MenuItem value="B">Type B</MenuItem>
+                        <MenuItem value="A">Private Fund (ANBI)</MenuItem>
+                        <MenuItem value="B">Private Fund (Non-ANBI)</MenuItem>
+                        <MenuItem value="C">Business</MenuItem>
                     </TextField>
                 </Grid>
 
                 <Grid item xs={12} md={2} display="flex">
                     <Button
-                        // fullWidth
+                       
                         variant="contained"
                         size="small"
                         sx={{

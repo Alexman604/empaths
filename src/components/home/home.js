@@ -27,6 +27,8 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import { SearchHome } from './search';
 import Divider from '@mui/material/Divider';
+import NumberOfCampaigns from './numberOfCampaigns';
+import NumberOfApplications from './numberOfAppplocations';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -52,11 +54,11 @@ function Home() {
     };
 
     return (
-        <Box >
+        <Box sx={{ marginLeft: "64px" }}>
 
 
             <AppBar position="fixed" color='inherit' elevation={1} sx={{ paddingLeft: "64px" }}>
-                <Container maxWidth="xl">
+                <Container maxWidth="ml" >
                     <Toolbar disableGutters>
                         <Typography
                             variant="h6"
@@ -68,7 +70,7 @@ function Home() {
                         <Box sx={{ flexGrow: 1 }} />
 
                         <Box sx={{ display: "flex", alignItems: "center" }}>
-                            <IconButton sx={{p:0}} size="large">
+                            <IconButton sx={{ p: 0 }} size="large">
                                 <Badge color="error" variant="dot" overlap="circular" anchorOrigin={{ vertical: 'top', horizontal: 'right' }} sx={{
                                     '& .MuiBadge-badge': {
                                         top: '30%',
@@ -121,8 +123,8 @@ function Home() {
             </AppBar>
 
             <Box >
-    <SearchHome/>
-                                    </Box>
+                <SearchHome />
+            </Box>
 
 
             <Drawer variant="permanent" sx={{ flexShrink: 0 }}>
@@ -164,8 +166,11 @@ function Home() {
                     </ListItem>
                 </List>
             </Drawer>
+            <Box display="flex" justifyContent="space-around">
 
-
+                <NumberOfCampaigns />
+                <NumberOfApplications />
+            </Box>
 
 
 
