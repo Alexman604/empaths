@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -7,18 +6,17 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { Box } from '@mui/material';
-import ChartCircle from "./ChartCircle.svg"
+import ChartCircle from './ChartCircle.svg';
 
 export default function NumberOfCampaigns() {
   return (
-    <Card sx={{ width: 564, margin: "1rem" }}>
+    <Card sx={{ width: 'auto', margin: '1rem' }}>
       <CardHeader
         sx={{ borderBottom: '1px solid #EEEDF2 ' }}
-        titleTypographyProps={{ align: 'left' }}
-        subheaderTypographyProps={{ align: 'left' }}
+        titleTypographyProps={{ align: 'left', variant: 'h5' }}
+        subheaderTypographyProps={{ align: 'left', variant: 'body2' }}
         title="Number of campaigns"
         subheader="Overall"
-
         action={
           <IconButton aria-label="info">
             <InfoOutlinedIcon />
@@ -27,8 +25,8 @@ export default function NumberOfCampaigns() {
       />
 
       <CardContent>
-        <Box sx={{ display: "flex", alignItems: "flex-end", gap: "10px" }}>
-          <Typography variant="h3" fontWeight="bold" >
+        <Box sx={{ display: 'flex', alignItems: 'flex-end', gap: '10px' }}>
+          <Typography variant="h3" fontWeight="bold">
             15
           </Typography>
           <Typography variant="h5" color="text.secondary">
@@ -36,12 +34,15 @@ export default function NumberOfCampaigns() {
           </Typography>
         </Box>
 
-        <Box display="flex" justifyContent="space-around" >
+        <Box display="flex" justifyContent="space-around">
           <img src={ChartCircle} alt="" />
 
-
-
-          <Box display="flex" flexDirection="column" alignItems="flex-start" justifyContent="space-between">
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="flex-start"
+            justifyContent="space-between"
+          >
             <Box display="flex" alignItems="flex-start">
               <Box
                 sx={{
@@ -49,13 +50,18 @@ export default function NumberOfCampaigns() {
                   height: '8px',
                   background: 'rgba(116, 89, 217, 0.12)',
                   borderRadius: '20px',
-                  margin: "10px"
+                  margin: '10px',
                 }}
               />
 
               <Box>
-
-                <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: '8px' }}>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginLeft: '8px',
+                  }}
+                >
                   <Typography
                     sx={{
                       fontFamily: 'Poppins',
@@ -74,7 +80,7 @@ export default function NumberOfCampaigns() {
                       display: 'flex',
                       flexDirection: 'row',
                       alignItems: 'center',
-                      justifyContent: "center",
+                      justifyContent: 'center',
                       padding: '3px 4px',
                       width: '28px',
                       height: '24px',
@@ -96,7 +102,6 @@ export default function NumberOfCampaigns() {
                       3
                     </Typography>
                   </Box>
-
                 </Box>
                 <Typography
                   sx={{
@@ -106,13 +111,12 @@ export default function NumberOfCampaigns() {
                     fontSize: '14px',
                     lineHeight: '22px',
                     color: '#101010',
-                    paddingLeft: "7px"
+                    paddingLeft: '7px',
                   }}
                 >
                   124,213 $ to be fundraised
                 </Typography>
               </Box>
-
             </Box>
             <Box display="flex" alignItems="flex-start">
               <Box
@@ -121,13 +125,18 @@ export default function NumberOfCampaigns() {
                   height: '8px',
                   background: '#B8AFDA',
                   borderRadius: '20px',
-                  margin: "10px"
+                  margin: '10px',
                 }}
               />
 
               <Box>
-
-                <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: '8px' }}>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginLeft: '8px',
+                  }}
+                >
                   <Typography
                     sx={{
                       fontFamily: 'Poppins',
@@ -146,7 +155,7 @@ export default function NumberOfCampaigns() {
                       display: 'flex',
                       flexDirection: 'row',
                       alignItems: 'center',
-                      justifyContent: "center",
+                      justifyContent: 'center',
                       padding: '3px 4px',
                       width: '28px',
                       height: '24px',
@@ -168,7 +177,6 @@ export default function NumberOfCampaigns() {
                       4
                     </Typography>
                   </Box>
-
                 </Box>
                 <Typography
                   sx={{
@@ -178,27 +186,32 @@ export default function NumberOfCampaigns() {
                     fontSize: '14px',
                     lineHeight: '22px',
                     color: '#101010',
-                    paddingLeft: "7px"
+                    paddingLeft: '7px',
                   }}
                 >
                   220,151 $ to be fundraised
                 </Typography>
               </Box>
-
-            </Box>         <Box display="flex" alignItems="flex-start">
+            </Box>{' '}
+            <Box display="flex" alignItems="flex-start">
               <Box
                 sx={{
                   width: '30px',
                   height: '8px',
                   background: '#7459D9',
                   borderRadius: '20px',
-                  margin: "10px"
+                  margin: '10px',
                 }}
               />
 
               <Box>
-
-                <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: '8px' }}>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginLeft: '8px',
+                  }}
+                >
                   <Typography
                     sx={{
                       fontFamily: 'Poppins',
@@ -217,7 +230,7 @@ export default function NumberOfCampaigns() {
                       display: 'flex',
                       flexDirection: 'row',
                       alignItems: 'center',
-                      justifyContent: "center",
+                      justifyContent: 'center',
                       padding: '3px 4px',
                       width: '28px',
                       height: '24px',
@@ -239,7 +252,6 @@ export default function NumberOfCampaigns() {
                       8
                     </Typography>
                   </Box>
-
                 </Box>
                 <Typography
                   sx={{
@@ -249,22 +261,16 @@ export default function NumberOfCampaigns() {
                     fontSize: '14px',
                     lineHeight: '22px',
                     color: '#101010',
-                    paddingLeft: "7px"
+                    paddingLeft: '7px',
                   }}
                 >
                   700K $ fundraised
                 </Typography>
               </Box>
-
             </Box>
-
           </Box>
-
         </Box>
-
       </CardContent>
-
-
     </Card>
   );
 }
